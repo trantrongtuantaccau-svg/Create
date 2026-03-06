@@ -26,8 +26,8 @@ from telegram.ext import (
 # ============================================================
 # CẤU HÌNH - Thay đổi ở đây
 # ============================================================
-BOT_TOKEN = "8694665621:AAEecu6KL49c2h0W49cVTvH9Hl2Ew6f_qjgAM_BOT_TOKEN"   # Token từ @BotFather
-
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 # Cài đặt scanner
 EMA_PERIOD = 200                         # Chu kỳ EMA
 TIMEFRAME = "1d"                         # Khung thời gian (nến ngày)
