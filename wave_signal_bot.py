@@ -22,8 +22,7 @@ log = logging.getLogger(__name__)
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 import os
-TELEGRAM_TOKEN  = os.environ.get("TELEGRAM_TOKEN", "YOUR_BOT_TOKEN")
-CHAT_ID         = os.environ.get("CHAT_ID", "YOUR_CHAT_ID")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 MIN_VOLUME_USDT = 5_000_000        # 5M USDT
 WAVE_BUY_THRESHOLD  = 8            # Cao hơn vì tìm điểm đảo chiều
