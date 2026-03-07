@@ -557,6 +557,9 @@ async def scan_above_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def scan_below_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await do_scan(update, context, "below")
 
+async def scan_bounce_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await do_scan(update, context, "bounce")
+
 async def scan_golden_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await do_scan(update, context, "golden_cross")
 
