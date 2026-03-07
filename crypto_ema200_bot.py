@@ -11,9 +11,18 @@ Sử dụng:
     3. Chạy: python crypto_ema200_bot.py
 """
 
-import os
+import logging
+import requests
+import pandas as pd
+import numpy as np
+from datetime import datetime
+import time
+import asyncio
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import (
+    Application, CommandHandler, CallbackQueryHandler, ContextTypes
+)
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
 # ============================================================
 # CẤU HÌNH - Thay đổi ở đây
 # ============================================================
